@@ -1,4 +1,4 @@
-/* General Styles */
+/* general */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -8,7 +8,7 @@ body {
 }
 
 nav {
-    background: #f54257; /* Bright red */
+    background: #f54257;
     color: #fff;
     padding: 1em 0;
     text-align: center;
@@ -42,42 +42,58 @@ section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.home-content {
-    margin-top: 50px;
+/* home */
+#home {
+    background: linear-gradient(to right, #f54257, #ffbd69);
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .home-content h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
-    color: #f54257;
+    font-size: 4em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .home-content p {
-    font-size: 1.2em;
-    color: #777;
+    font-size: 1.5em;
+    margin-bottom: 10px;
 }
 
-.buttons {
-    margin-top: 20px;
+.home-content .buttons {
+    margin-top: 30px;
 }
 
 .button {
     display: inline-block;
-    padding: 10px 20px;
-    margin: 5px;
-    background: #f54257; /* Bright red */
-    color: #fff;
+    padding: 15px 30px;
+    margin: 10px;
+    background: #fff;
+    color: #f54257;
     text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s ease;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .button:hover {
-    background: #d13647; /* Darker red for hover effect */
+    background: #f54257;
+    color: #fff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
-#resume iframe {
-    border: none;
+/* Projects Section */
+#projects {
+    padding: 50px 20px;
+    text-align: center;
+    background: #fff;
+    margin: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -89,7 +105,7 @@ section {
 }
 
 .project-item {
-    background: #f4f4f4; /* Light grey */
+    background: #f4f4f4;
     padding: 20px;
     margin: 10px;
     border-radius: 10px;
@@ -102,6 +118,32 @@ section {
     color: #f54257;
 }
 
+/* resume */
+#resume {
+    padding: 50px 20px;
+    text-align: center;
+    background: #fff;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.resume-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.resume-container iframe {
+    width: 80%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/*contact */
 form {
     max-width: 500px;
     margin: 0 auto;
@@ -131,7 +173,7 @@ form input:focus, form textarea:focus {
 
 form button {
     padding: 10px 20px;
-    background: #f54257; /* Bright red */
+    background: #f54257;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -140,5 +182,5 @@ form button {
 }
 
 form button:hover {
-    background: #d13647; /* Darker red for hover effect */
+    background: #d13647;
 }
